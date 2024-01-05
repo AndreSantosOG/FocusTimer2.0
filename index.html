@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusTimer2.0</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script type="module" src="src/main.js" defer></script>
+</head>
+<body>
+    <div id="app">
+    <div id="buttons">
+    <div id="timer-button">
+    <section id="timer">
+        <span id="minutes">25</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+    </section>
+    <section id="controls">
+        <button 
+        data-action="toggleRunning"
+        class="ph ph-play-circle">
+            <span class="sr-only">Acionar contador</span>
+        </button>
+        <button 
+        data-action="reset"
+        class="ph ph-stop-circle">
+            <span class="sr-only">Parar contador</span>
+        </button>
+        <button 
+        data-action="plusFive"
+        class="ph ph-plus-circle">
+            <span class="sr-only">Adicionar 5 minutos ao contador</span>
+        </button>
+        <button 
+        data-action="minusFive"
+        class="ph ph-minus-circle">
+            <span class="sr-only">Retirar 5 minutos ao contador</span>
+        </button>
+    </section>
+    </div>
+    <section id="sounds">
+        <button 
+        data-action="toggleFlorest"
+        class="ph ph-tree" id="florest">
+            <span class="sr-only">Som de floresta</span>
+        </button>
+        <button 
+        data-action="toggleRain"
+        class="ph ph-cloud-rain" id="rain">
+            <span class="sr-only">Som de chuva</span>
+        </button>
+        <button 
+        data-action="toggleCoffe"
+        class="ph ph-storefront" id="coffeShop">
+            <span class="sr-only">Som de cafeteria</span>
+        </button>
+        <button 
+        data-action="toggleFire"
+        class="ph ph-fire" id="fire">
+            <span class="sr-only">Som de lareira</span>
+        </button>
+    </section>
+    </div>
+</div>
+</body>
+</html>

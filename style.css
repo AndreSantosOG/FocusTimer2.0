@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --had: 240;
+    font-size: clamp(40%, 1% + 2vw, 62.5%);
+    --bg-color:hsl(0, 0%, 100%);
+    --elements-color-normal:hsl(var(--had), 6%, 21%, 1);
+    --bg-button-normal:hsla(var(--had), 9%, 89%, 1);
+    --bg-button-selected:hsl(194, 97%, 31%, 1);
+    --elements-color-selected:hsl(0, 0%, 100%, 1);
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.sr-only {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+    
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    appearance: none;
+}
+body {
+    font-size: 1.6rem;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    
+}
+button {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+#timer {
+    font-size: 12.6rem;
+    font-weight: 500;
+    color: var(--elements-color-normal);
+    display: flex;
+    gap: 0.5rem;
+}
+
+#sounds {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.2rem;
+}
+#controls {
+    display: inline-flex;
+    gap: 4rem;
+    flex-shrink: 0;
+}
+#controls button {
+    width: 4.8rem;
+    height: 4.8rem;
+    font-size: 7rem;
+    color: var(--elements-color-normal);
+}
+#sounds button {
+    width: 13.8rem;
+    height: 15.2rem;
+    flex-shrink: 0;
+    background-color: var(--bg-button-normal);
+    border-radius: 2.4rem;
+    font-size: 7rem;
+    color: var(--elements-color-normal);
+}
+#timer-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.7rem;
+}
+
+#buttons{
+    display: flex;
+    gap: 19.2rem;
+    align-items: center;
+}
+
+.ph.running{
+    --elements-color-normal:hsl(0, 0%, 100%, 1);
+    --bg-button-normal:hsl(194, 97%, 31%, 1);
+} 
